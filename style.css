@@ -1,0 +1,95 @@
+.redd {
+    color: red;
+    font-weight: bold;
+}
+
+.content {
+    padding: 10px;
+}
+
+.bannere {
+    background-image: linear-gradient(rgba(24, 15, 15, 0.164), rgba(8, 8, 8, 0.842)), url('images/geography.jpeg');
+    /* background-image: url(images/geography.jpeg);*/
+    background-size: cover;
+    height: 50vh;
+    justify-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    align-content: center;
+
+}
+
+
+
+.map {
+    justify-items: center;
+
+
+}
+
+.map img {
+    justify-self: center;
+    width: 300px;
+}
+
+.ita {
+    font-style: italic;
+}
+
+h5 {
+    text-shadow: 0px 0px 6px red;
+}
+
+@media screen and (min-width:768px) {
+    .location {
+        display: flex;
+    }
+
+    .map {
+        border-left: red thick solid;
+        padding-left: 5px;
+        width: 50%;
+        display: block;
+        margin-left: 10px;
+    }
+
+    .tt {
+        width: 50%;
+        line-height: 2.4;
+
+        align-content: center;
+
+    }
+
+    .cityrow {
+        display: flex;
+        margin: 20px 2px;
+    }
+
+    .city {
+        margin: 0px 3px;
+
+        width: 33%;
+    }
+
+    .div2,
+    .demorow {
+        display: flex;
+    }
+
+    .div2 p,
+    .democol {
+        width: 50%;
+        padding: 5px;
+    }
+
+
+
+
+
+
+
+
+
+}
