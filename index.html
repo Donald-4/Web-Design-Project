@@ -65,6 +65,53 @@
       padding: 5px;
     }
 
+    .site-footer {
+            background-color: #f8d7da;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0.5rem 0;
+            display: inline-block;
+        }
+
+    .newsletter-form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-form button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .copyright {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
     #subfooter a,
     #footer a {
       color: white;
@@ -254,84 +301,44 @@
   </div>
   <!--end of content-->
 
-  <footer class="bg-danger-subtle text-center">
-    <!-- Grid container -->
-    <div class="row container-fluid p-4">
-      <!-- Section: Links -->
-      <section class="col-md-4">
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-6">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a class="text-body" href="./contact.html">Contact</a>
-              </li>
-              <li>
-                <a class="text-body" href="./Geography.html">Geography</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6">
-            <h5 class="text-uppercase text-black">Links</h5>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a class="text-body" href="./history.html">History</a>
-              </li>
-              <li>
-                <a class="text-body" href="./index.html">Home</a>
-              </li>
-            </ul>
-          </div>
+ <!-- Footer Section -->
+    <footer>
+      <div class="site-footer">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
         </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
+        <div class="footer-section">
+          <h4>About England</h4>
+          <p>
+            Explore our beautiful nation and feel the natural landscapes with
+            your loved ones. England is one of the most beautiful countries in
+            the world, welcoming and diverse.
+          </p>
+        </div>
+        <div class="footer-section newsletter-form">
+          <h4>Newsletter Signup</h4>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 Copyright:
+        <a href="index.html" style="color: white">Explore England</a>
+      </div>
+    </footer>
 
-      <!-- Section: Text -->
-      <section class="col-md-4 mb-4 text-danger h4">
-        <p>
-          Explore Our beautiful Nation and feel the natural landscapes with
-          your loved ones England is one of the beautiful countries in the
-          world, we are accomodating, so why not visit us today?
-        </p>
-      </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Form -->
-      <section class="col-md-4 justify-item-center">
-        <form action="">
-          <div class="justify-content-center">
-            <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
-            </p>
-            <div>
-              <input type="email" id="form5Example24" class="form-control" />
-              <label class="form-label" for="form5Example24">Email address</label>
-            </div>
-
-            <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
-              Subscribe
-            </button>
-          </div>
-        </form>
-      </section>
-      <!-- Section: Form -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3 bg-danger text-white">
-      © 2020 Copyright:
-      <a class="text-reset fw-bold" href="./index.html">Explore England</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
   <!-- Footer -->
 </body>
 
