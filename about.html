@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit England</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Additional Custom Styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .site-footer {
+        background-color: #f8d7da;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .footer-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0.5rem 0;
+        display: inline-block;
+      }
+
+      .newsletter-form input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .newsletter-form button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+
+      .copyright {
+        background-color: #dc3545;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .about-image {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 768px) {
+        .site-footer {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="#">Explore England</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#">Culture & Landmarks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#"
+                  >Economy & Environment</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-danger"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >More......</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item text-danger" href="Geography.html"
+                      >Geography & Demographics</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#"
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex ps-5" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="grid-container">
+      <div>
+        <h2>Our Nation's Essence</h2>
+        <p>
+          England is a land of rich history, diverse landscapes, and vibrant
+          culture. Nestled in the heart of the United Kingdom, our nation boasts
+          a remarkable blend of ancient traditions and modern innovation. From
+          the rolling countryside of the Cotswolds to the bustling streets of
+          London, England offers a unique tapestry of experiences.
+        </p>
+        <h3>Key Highlights</h3>
+        <ul>
+          <li>Population: Approximately 56 million</li>
+          <li>Capital: London</li>
+          <li>Official Language: English</li>
+          <li>Government: Constitutional Monarchy</li>
+        </ul>
+      </div>
+      <div>
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="England Landscape"
+          class="about-image"
+        />
+      </div>
+    </div>
+
+    <div class="grid-container" style="background-color: #f8f9fa">
+      <div>
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="English Culture"
+          class="about-image"
+        />
+      </div>
+      <div>
+        <h2>Cultural Diversity</h2>
+        <p>
+          England is a melting pot of cultures, traditions, and histories. Our
+          nation has been shaped by centuries of global interactions, resulting
+          in a unique and inclusive society. From the medieval castles to
+          contemporary art galleries, from traditional afternoon tea to
+          multicultural cuisine, England represents a harmonious blend of old
+          and new.
+        </p>
+        <h3>Global Contributions</h3>
+        <ul>
+          <li>Literature: Shakespeare, Dickens, Austen</li>
+          <li>Science: Newton, Darwin, Hawking</li>
+          <li>Music: The Beatles, Rolling Stones</li>
+          <li>Sports: Football, Cricket, Tennis</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="site-footer">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About England</h4>
+          <p>
+            Explore our beautiful nation and feel the natural landscapes with
+            your loved ones. England is one of the most beautiful countries in
+            the world, welcoming and diverse.
+          </p>
+        </div>
+        <div class="footer-section newsletter-form">
+          <h4>Newsletter Signup</h4>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 Copyright:
+        <a href="index.html" style="color: white">Explore England</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
