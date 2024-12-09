@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Economy & Environment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .imgc {
+        background-image: linear-gradient(
+            rgba(24, 15, 15, 0.459),
+            rgba(8, 8, 8, 0.76)
+          ),
+          url("images/economics.jpg");
+        /* background-image: url(images/culture.jpg);*/
+        background-size: cover;
+        height: 50vh;
+        color: white;
+        font-weight: bolder;
+        font-size: larger;
+        align-content: center;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      h1,
+      h2 {
+        color: red;
+      }
+
+      .move {
+        margin: 10px;
+      }
+
+      .under {
+        border-bottom: thick solid red;
+      }
+
+      #title {
+        border-bottom: thick solid rgb(241, 206, 141);
+        width: max-content;
+      }
+
+      h3 {
+        border-bottom: thick solid rgba(108, 119, 216, 0.459);
+        width: max-content;
+      }
+
+      @media screen and (min-width: 768px) {
+        #climate,
+        #economy {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .main {
+          grid-row: span 2;
+          padding: 10px;
+        }
+
+        .economic,
+        .currency {
+          padding: 10px;
+        }
+
+        .season {
+          padding-left: 10px;
+        }
+
+        .overview,
+        .top {
+          grid-column: span 2;
+        }
+
+        .sided {
+          border-left: thick solid red;
+        }
+      }
+
+      footer {
+        width: 100%;
+      }
+      .site-footer {
+        background-color: #f8d7da;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .footer-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0.5rem 0;
+        display: inline-block;
+      }
+
+      .newsletter-form input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .newsletter-form button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+
+      .copyright {
+        background-color: #dc3545;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+      .copyright > a {
+        color: white;
+        text-decoration: none;
+      }
+      @media screen and (max-width: 768px) {
+        .site-footer {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!------------------Header--------------->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger redd" href="index.html"
+            ><i class="bi bi-geo-alt"></i>Explore England</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-3 mb-2 mb-lg-0 justify-content-between">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-danger"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="history.html">History</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="culture.html"
+                  >Culture & Landmarks</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-danger dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More.
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item text-danger" href="./Geography.html"
+                      >Geography & Demographics</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="economy.html"
+                      >Economy & Environment</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex ps-5" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-----------Header end --------------------->
+    <div class="imgc">
+      <h1 id="title" class="py-2 mx-2 row">Economy & Environment</h1>
+    </div>
+
+    <div class="container-fluid">
+      <h2>Introduction to England's Economy</h2>
+      <p>
+        England boasts one of the largest and most dynamic economies in the
+        world. Its wealth and global influence stem from centuries of
+        industrial, commercial, and technological advancements. Today, it
+        thrives in various sectors, including finance, manufacturing,
+        technology, and agriculture.
+      </p>
+
+      <div class="content">
+        <div id="economy">
+          <div class="top">
+            <h2>Economy</h2>
+          </div>
+          <div class="main move">
+            <h3>Main Industries of England</h3>
+            <p>
+              England’s economy is diverse, with major industries contributing
+              to its GDP and global standing.
+            </p>
+            <div>
+              <li>
+                <strong>Finance and Banking:</strong>England is home to some of
+                the world’s most renowned financial institutions. London, as one
+                of the global financial hubs, houses the Bank of England, the
+                London Stock Exchange, and hundreds of international banks. The
+                city’s financial services industry is integral to England’s
+                economy, focusing on banking, investment, and insurance
+                services.
+              </li>
+            </div>
+            <div>
+              <li>
+                <strong>Manufacturing and Engineering:</strong>England remains a
+                leader in industries like automotive production, aerospace, and
+                machinery manufacturing. Iconic British brands such as
+                Rolls-Royce, Jaguar Land Rover, and British Airways are global
+                players. The sector also supports the country’s technology and
+                engineering innovations, contributing significantly to exports.
+              </li>
+            </div>
+            <div>
+              <li>
+                <strong>Technology and Innovation:</strong>The technology sector
+                has flourished in recent years, with cities like Cambridge,
+                Manchester, and Bristol emerging as key players in software
+                development, AI, and biotechnology. England is home to many of
+                the world’s leading tech companies, and its tech industry
+                continues to grow, attracting both investment and talent.
+              </li>
+            </div>
+            <div>
+              <li>
+                <strong>Agriculture and Food Production:</strong>While
+                agriculture now accounts for a smaller portion of GDP, it
+                remains essential, particularly in rural areas like East Anglia
+                and the Midlands. England produces a wide variety of crops and
+                livestock, including cereals, potatoes, dairy products, and
+                meat. The country is also known for its high-quality food
+                production, such as English cheeses and traditional products
+                like fish and chips.
+              </li>
+            </div>
+            <div>
+              <li>
+                <strong>Tourism:</strong>Tourism is another key economic driver,
+                with millions of visitors flocking to England each year to
+                experience its rich history, cultural landmarks, and natural
+                beauty. Popular destinations such as London, Bath, York, the
+                Lake District, and the Cotswolds attract tourists from across
+                the globe.
+              </li>
+            </div>
+          </div>
+          <div class="currency sided move">
+            <h3>Currency and Trade:</h3>
+            <div>
+              <li>
+                <strong>Currency:</strong>England uses the pound sterling (£),
+                which has been the country’s currency for centuries. The pound
+                is one of the most traded currencies in the world, reflecting
+                England’s historical and modern economic significance.
+              </li>
+            </div>
+            <div>
+              <li>
+                <strong>Key Trading Partners:</strong>England’s primary trading
+                partners include countries within the European Union
+                (post-Brexit), the United States, and China. Major exports
+                include machinery, vehicles, pharmaceuticals, and chemicals,
+                while it imports electronics, fuel, and food products. England’s
+                global trade relationships are vital to its economy,
+                contributing to the country’s international standing.
+              </li>
+            </div>
+          </div>
+          <div class="economic sided move">
+            <h3>Economic Infographics:</h3>
+            <strong>GDP by Sector:</strong>
+            <li>Services: 80%</li>
+            <li>Industry: 15%</li>
+            <li>Agriculture: 2%</li>
+            <br />
+
+            <strong>Top Trading Partners:</strong>
+            <li>European Union (EU)</li>
+            <li>United States</li>
+            <li>China</li>
+          </div>
+        </div>
+        <br /><br />
+
+        <!---------------------------Natural Features-->
+        <div id="features">
+          <h2>Natural Features</h2>
+          <div class="top move">
+            <h3>England’s Natural Beauty</h3>
+            <p>
+              England is a country of contrasts, with its landscapes ranging
+              from tranquil rural countryside to rugged coastlines, towering
+              mountains, and serene lakes. These natural features not only
+              define the nation’s geography but also influence its climate,
+              wildlife, and way of life.
+            </p>
+
+            <div>
+              <li>
+                <strong>Forests and Woodlands:</strong>England is home to many
+                ancient woodlands and forests, such as Sherwood Forest, which is
+                deeply linked to English folklore. The country’s forests are
+                vital for wildlife conservation and also serve as recreational
+                spaces. The iconic English Oak and Beech trees are common, and
+                these forests are teeming with diverse flora and fauna.
+              </li>
+              <li>
+                <strong>Rivers and Lakes:</strong>England’s rivers, including
+                the River Thames, River Severn, and River Trent, have played an
+                essential role in its history, trade, and agriculture. The
+                country’s lakes, especially those in the Lake District, such as
+                Windermere, are famous for their stunning views and recreational
+                activities like boating, hiking, and fishing.
+              </li>
+              <li>
+                <strong>Mountains and Hills:</strong>The Pennines, often called
+                the "backbone of England," stretch across the center of the
+                country. England is also home to the Lake District’s majestic
+                peaks, including Scafell Pike, the highest mountain in England.
+                The Cotswolds offer rolling hills, while the Yorkshire Dales
+                present dramatic landscapes. These areas are popular for hiking,
+                nature walks, and outdoor activities.
+              </li>
+              <li>
+                <strong>Coastline and Beaches:</strong>England’s coastline is
+                diverse, ranging from the white chalk cliffs of Dover to the
+                sandy beaches of Cornwall and the rugged cliffs of Devon.
+                Coastal regions like Cornwall, Dorset, and Norfolk attract
+                tourists, surfers, and nature enthusiasts. The coast is also
+                home to diverse marine life, making it an important area for
+                conservation.
+              </li>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+
+        <div id="climate">
+          <h2>Climate</h2>
+          <div class="overview move">
+            <h3>Overview of England’s Climate:</h3>
+            <p>
+              England enjoys a temperate maritime climate, meaning it
+              experiences moderate temperatures year-round, with relatively high
+              levels of rainfall. The weather can be unpredictable, with the
+              frequent occurrence of sunshine, clouds, and occasional rain
+              showers all in the same day
+            </p>
+            <li>
+              <strong>Southern England:</strong>The south of England, including
+              London and the South Coast, tends to be milder than the north,
+              with more sunny days in the summer. This region often experiences
+              higher temperatures and less rainfall compared to the rest of the
+              country, making it popular for agriculture and tourism.
+            </li>
+            <li>
+              <strong>Northern England:</strong>The north, including regions
+              like Yorkshire and Cumbria, is cooler, with more frequent rain and
+              higher elevations. Winters can be colder, with snow common in the
+              upland areas, such as the Pennines and Lake District. The northern
+              climate supports agriculture and attracts visitors to its national
+              parks.
+            </li>
+            <li>
+              <strong>Coastal Areas:</strong>Coastal regions like Cornwall and
+              the South Coast are often milder in winter, thanks to the warming
+              effect of the surrounding sea. Rain is frequent along the coasts,
+              particularly in western parts like Wales, Devon, and Cornwall.
+            </li>
+          </div>
+          <div class="pattern move">
+            <h3>Climate Patterns:</h3>
+            <p>
+              England’s weather patterns are known for being variable. Coastal
+              areas experience mild temperatures year-round, while the inland
+              regions tend to experience more extremes, such as colder winters
+              and hotter summers. Rainfall is distributed evenly throughout the
+              year, with higher amounts occurring in the west and north.
+            </p>
+          </div>
+
+          <div class="season sided move">
+            <h3>Seasons in England</h3>
+            <li>
+              <strong>Winter:</strong>Mild, with average temperatures ranging
+              from 2°C to 8°C (35°F to 46°F). Snow is more common in the north
+              and higher regions.
+            </li>
+            <li>
+              <strong>Spring:</strong>Temperatures range from 8°C to 15°C (46°F
+              to 59°F), with blooming flowers and outdoor activities starting to
+              increase.
+            </li>
+            <li>
+              <strong>Summer:</strong>Warm but unpredictable, ranging from 14°C
+              to 22°C (57°F to 72°F). Rain is common, but sunny spells are
+              frequent.
+            </li>
+            <li>
+              <strong>Autumn:</strong>Crisp and cool, ranging from 10°C to 18°C
+              (50°F to 64°F), with vibrant foliage in parks and rural areas.
+            </li>
+          </div>
+        </div>
+        <br /><br />
+
+        <div class="environmnent">
+          <h2>Environmental Sustainability</h2>
+          <div class="move">
+            <h3>Environmental Protection and Initiatives:</h3>
+            <p>
+              England is committed to environmental sustainability, focusing on
+              protecting its natural landscapes, reducing carbon emissions, and
+              promoting renewable energy sources.
+            </p>
+            <li>
+              <strong>Renewable Energy:</strong>England is leading the way in
+              renewable energy, with a growing focus on wind energy,
+              particularly offshore wind farms. Solar energy is also
+              increasingly popular, and the country is working towards reducing
+              reliance on fossil fuels.
+            </li>
+            <li>
+              <strong>National Parks and Conservation Areas:</strong>Over 10% of
+              England’s land area is designated as national parks or protected
+              areas. These areas, including the Lake District, Peak District,
+              and New Forest, are protected for their natural beauty, wildlife,
+              and historical significance.
+            </li>
+            <li>
+              <strong>Biodiversity Conservation:</strong>The country has made
+              substantial efforts to protect its biodiversity, including
+              programs focused on endangered species, wildlife habitats, and
+              ecosystem restoration. Organizations such as the Royal Society for
+              the Protection of Birds (RSPB) play an essential role in
+              preserving natural habitats and promoting environmental education.
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="site-footer">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>About England</h4>
+          <p>
+            Explore our beautiful nation and feel the natural landscapes with
+            your loved ones. England is one of the most beautiful countries in
+            the world, welcoming and diverse.
+          </p>
+        </div>
+        <div class="footer-section newsletter-form">
+          <h4>Newsletter Signup</h4>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 Copyright:
+        <a href="index.html">Explore England</a>
+      </div>
+    </footer>
+  </body>
+</html>
