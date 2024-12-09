@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture & Landmarks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        .imgc {
+            background-image: linear-gradient(rgba(24, 15, 15, 0.979), rgba(8, 8, 8, 0.37)), url('images/culture.jpg');
+            /* background-image: url(images/culture.jpg);*/
+            background-size: cover;
+            height: 50vh;
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            align-content: center;
+
+        }
+
+        .sided {
+            border-left: thick solid red;
+
+        }
+
+        h1,
+        h2 {
+            color: red;
+
+        }
+
+        .under {
+            border-bottom: thick solid red;
+        }
+
+        #title {
+            border-bottom: solid thick wheat;
+            width: max-content;
+
+
+        }
+
+        h5 {
+            border-bottom: thick solid rgb(241, 206, 141);
+            width: max-content;
+        }
+
+        img {
+            height: 200px;
+            width: 90%;
+        }
+
+        .card {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------Header--------------->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger redd" href="#"><i class="bi bi-geo-alt"></i>Explore
+                    England</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0 justify-content-evenly d-flex ">
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="Geography.html">Geography & Demographics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger active" href="culture.html">Culture & Landmarks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="economy.html">Economy & Environment</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-danger dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More......
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-danger" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">About US</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex ps-5" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-----------Header end --------------------->
+    <div class="imgc">
+        <h1 id="title" class="py-2 mx-2 row">Culture & Landmarks of England</h1>
+    </div>
+    <div class="container-fluid">
+
+
+
+
+        <h2>England’s Cultural Heritage</h2>
+        <p>
+            England is renowned for its rich cultural heritage, with traditions spanning centuries. From iconic music
+            and dance to delicious food and lively festivals, the country’s culture reflects its history and diversity.
+            Whether you're partaking in a traditional English tea ceremony, attending a Shakespearean play at the Globe
+            Theatre, or dancing along to a folk tune, England offers a unique experience steeped in centuries-old
+            traditions.</p>
+
+        <!--Gallery/Carousel of Images:
+            English Tea Ceremony
+            Shakespeare’s Globe Theatre
+            Traditional English Folk Dance
+            English Pubs and Cuisine-->
+
+        <div class="row ">
+            <h2>Famous Landmarks</h2>
+            <p>
+                England is home to numerous landmarks that are not only of historical significance but also serve as
+                symbols of its past. These iconic sites, from medieval castles to royal palaces, have drawn millions of
+                visitors from around the world.
+
+            </p>
+
+            <div class="d-md-flex row justify-content-md-evenly justify-content-center ">
+                <div class="card " style="width: 18rem;">
+                    <img src="images/bigben.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Big Ben & The Houses of Parliament – A historical overview of the iconic
+                            clock
+                            tower and the significance of the British Parliament.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/stonehenge.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Stonehenge – Explore the mystery behind the prehistoric monument and its
+                            cultural importance.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/tower.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">The Tower of London – A detailed look into its history as a royal palace,
+                            prison, and its role in England’s royal heritage.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/windsor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Windsor Castle – The oldest inhabited castle in the world, a residence of
+                            the
+                            British royal family.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/lake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">The Lake District – A UNESCO World Heritage site, known for its stunning
+                            natural beauty, lakes, and literary significance.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!---
+            tootips
+
+            Images of Famous Landmarks with Descriptions:
+            
+
+
+
+
+            -->
+
+
+        </div>
+        <hr>
+        <div>
+            <h2>National Symbols</h2>
+            <h3>Description of Symbols</h3>
+            <p>England’s national symbols represent its pride, history, and strength. The lion, the national animal,
+                symbolizes courage and royalty, while the rose, the national flower, stands for beauty and unity.
+            </p>
+            <h3> Images and Descriptions of the Symbols:</h3>
+
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-3 card " style="width: 18rem;">
+                    <img src="images/flag.jpg" class="card-img-top " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFlag" aria-expanded="false" aria-controls="collapseFlag">
+
+                    <div class="collapse " id="collapseFlag">
+                        <div class="card-body">
+                            Flag of England (St. George’s Cross): A red cross on a white field, symbolizing England's
+                            patron
+                            saint, St.
+                            George.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 card" style="width: 18rem;">
+                    <img src="images/lion.jpg" class="card-img-top " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNationAnim" aria-expanded="false" aria-controls="collapseNationAnim">
+
+                    <div class="collapse" id="collapseNationAnim">
+                        <div class=" card-body">
+                            National Animal – The Lion: Known for its strength and courage, the lion is a symbol of
+                            England’s royal heritage.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 card" style="width: 18rem;">
+                    <img src="images/flower.jpg" class="card-img-top " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNationflow" aria-expanded="false" aria-controls="collapseNationflow">
+
+                    <div class="collapse" id="collapseNationflow">
+                        <div class=" card-body">
+                            National Flower – The Rose: The Tudor Rose, representing the union of two noble houses, is a
+                            symbol
+                            of
+                            England’s royal and political history.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 card" style="width: 18rem;">
+                    <img src="images/1.jpg" class="card-img-top " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapNationtree" aria-expanded="false" aria-controls="collapNationtree">
+
+                    <div class="collapse" id="collapNationtree">
+                        <div class="card-body">
+                            National Tree – The Oak: A symbol of strength and endurance, the oak tree is an important
+                            symbol
+                            of
+                            England’s countryside.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <h2>Arts and Entertainment</h2>
+
+
+
+
+            <div class="row">
+                <div class="col-md-4 sided py-2">
+                    <h5>Famous English Writers</h5>
+                    <li><strong> William Shakespeare:</strong> Known as one of the greatest writers in the English
+                        language
+                        and
+                        playwrights.</li>
+
+                    <li><strong>Jane Austen:</strong> A beloved novelist known for her keen observations of early
+                        19th-century English
+                        society.</li>
+                </div>
+                <div class="col-md-4 sided py-2">
+                    <h5>Famous English Musicians:</h5>
+                    <ul>
+                        <li><strong>The Beatles:</strong> One of the most influential bands in the history of music.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 sided py-2">
+                    <h5>Famous film makers</h5>
+                    <ul>
+                        <li><strong>Alfred Hitchcock:</strong> Known for his pioneering work in the thriller genre.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <hr>
+
+        <div>
+
+
+            <div class=" container-fluid">
+                <h2 class="redd">Culture</h2><br>
+                <div class="row">
+                    <div class="col-md-4 sided">
+                        <h5>Music & Dance:</h5>
+                        <li><strong>Traditional Music: </strong> Folk music, classical composers like Edward Elgar, and
+                            iconic English
+                            music genres (e.g.,
+                            punk rock, Britpop).</li>
+                        <li><strong>Dance:</strong> Traditional English folk dances like Morris dancing and historical
+                            dances that
+                            celebrate England’s
+                            past.</li>
+                    </div>
+                    <div class="col-md-4 sided">
+                        <h5> Art & Crafts:</h5>
+                        <li><strong> English Art:</strong> Explore renowned artists like J.M.W. Turner, and contemporary
+                            art
+                            movements in
+                            England.Showcase key museums like The Tate and The National Gallery.</li>
+
+                        <li><strong>Crafts:</strong> Traditional crafts like pottery (e.g., Wedgwood), lace-making, and
+                            the famous
+                            English tea sets.</li>
+                    </div>
+                    <div class="col-md-4 sided">
+                        <h5>Cuisine:</h5>
+                        <li><strong>English Breakfast:</strong> A classic full breakfast with bacon, eggs, sausages,
+                            beans, and toast.
+                        <li><strong>Fish and Chips:</strong> The iconic English dish, served in traditional style.</li>
+                        <li><strong>Afternoon Tea:</strong> A quintessential English tradition involving tea, scones,
+                            clotted cream, and
+                            finger
+                            sandwiches.</li>
+                        <li><strong> Yorkshire Pudding & Sunday Roast:</strong> A deep dive into these staple dishes.
+                        </li>
+                    </div>
+                </div><br><br>
+                <div class="row">
+                    <div class="col-md-4 sided">
+                        <h5>Festivals & Celebrations:</h5>
+                        <li><strong>Guy Fawkes Night:</strong> Celebrating the failed Gunpowder Plot with bonfires and
+                            fireworks.
+                            The Notting Hill Carnival: One of the world’s largest street festivals, celebrating
+                            Caribbean culture.</li>
+                        <li><strong>St. George’s Day:</strong> England’s national day, honoring the patron saint with
+                            parades and
+                            celebrations.</li>
+                    </div>
+                    <div class="col-md-4 sided">
+                        <h5> Traditional Occupations:</h5>
+                        <li><strong>Tea Brewing & Tasting:</strong> The tradition of English tea and the famous tea
+                            shops.
+                            Fishing & Farming: England’s historic agricultural practices and their role in shaping its
+                            rural identity.</li>
+                        <li><strong>Literary Traditions:</strong> England’s global impact on literature with figures
+                            like William
+                            Shakespeare, Jane
+                            Austen, and Charles Dickens.</li>
+                    </div>
+
+                </div>
+            </div><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
